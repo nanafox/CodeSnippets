@@ -13,8 +13,8 @@ def add(x: float, y: float) -> float:
         float: the sum of the two numbers
 
     Raises:
-        TypeError: when any of the arguments given is not either an integer or a
-        float
+        TypeError: when any of the arguments given is not either an integer or
+        a float
 
     Tests:
         >>> add(10.5, .5)
@@ -43,8 +43,8 @@ def subtract(x: float, y: float) -> float:
         float: the difference of the two numbers
 
     Raises:
-        TypeError: when any of the arguments given is not either an integer or a
-        float
+        TypeError: when any of the arguments given is not either an integer or
+        a float
 
     Tests:
         >>> subtract(10.5, .5)
@@ -73,8 +73,8 @@ def multiply(x: float, y: float) -> float:
         float: the product of the two numbers
 
     Raises:
-        TypeError: when any of the arguments given is not either an integer or a
-        float
+        TypeError: when any of the arguments given is not either an integer or
+        a float
 
     Tests:
         >>> multiply(10.5, .5)
@@ -91,7 +91,7 @@ def multiply(x: float, y: float) -> float:
     return x * y
 
 
-def divide(x: float, y: float) -> float: 
+def divide(x: float, y: float) -> float:
     """
     Returns the quotient of two numbers (intgers or floats)
 
@@ -103,8 +103,8 @@ def divide(x: float, y: float) -> float:
         float: the quotient of the two numbers
 
     Raises:
-        TypeError: when any of the arguments given is not either an integer or a
-        float
+        TypeError: when any of the arguments given is not either an integer or
+        a float
         ZeroDivisionError: when a divisor is zero
 
     Tests:
@@ -123,7 +123,7 @@ def divide(x: float, y: float) -> float:
     """
     if not isinstance(x, (float, int)) or not isinstance(y, (float, int)):
         raise TypeError("operands must be an integer or float")
-    
+
     if y == 0:
         raise ZeroDivisionError("Cannot divide with zero")
 
