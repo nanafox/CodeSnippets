@@ -1,0 +1,25 @@
+this will test the `square_me function`
+signature: def square_me(x: int) -> int
+
+
+>>> from operations import square_me
+>>> square_me(5)
+25
+
+>>> square_me(9)
+81
+
+>>> square_me("5")
+Traceback (most recent call last):
+...
+TypeError: do not square strings
+
+>>> square_me(3.14)
+Traceback (most recent call last):
+...
+TypeError: not handling float values yet, use integers
+
+>>> square_me([4, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: use only integers
