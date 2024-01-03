@@ -1,0 +1,49 @@
+This file will test all the functions in the math_ops.py module
+
+
+>>> math_ops = __import__('math_ops')
+
+
+==== Test the add function ====
+
+>>> math_ops.add(5, 10)
+15
+>>> math_ops.add(150, 20)
+170
+
+# Edge case 1: Non-numeric value
+>>> math_ops.add("1", 2)
+Traceback (most recent call last):
+...
+TypeError: operands must be an integer or float
+>>> math_ops.add(1, "2")
+Traceback (most recent call last):
+...
+TypeError: operands must be an integer or float
+>>> math_ops.add("1", "2")
+Traceback (most recent call last):
+...
+TypeError: operands must be an integer or float
+
+# Edge 2: Type casting
+>>> math_ops.add(int("45"), 10)
+55
+
+>>> math_ops.add(int("a"), 10)
+Traceback (most recent call last):
+...
+ValueError: invalid literal for int() with base 10: 'a'
+
+>>> math_ops.add(int(ord("a")), 10)
+107
+
+>>> math_ops.add(ord("a"), 10)
+107
+
+# Edge 3: Very large numbers
+>>> num_1 = 7974982347029834703984730984703598732095870329857032985709587209587230958723
+>>> num_2 = 3239098732983278642874638746328746238745843287642387568327462387562387568768
+>>> math_ops.add(num_1, num_2)
+11214081080013113346859369731032344970841713617499420554037049597149618527491
+
+>>> 
