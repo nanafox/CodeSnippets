@@ -23,4 +23,4 @@ def square_me(x: int) -> int:
     if not isinstance(x, int):
         raise TypeError("use only integers")
 
-    return x ** 2
+    return x**2
