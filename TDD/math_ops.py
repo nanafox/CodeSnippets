@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 
-def add(x: float, y: float) -> float:
+def add(x: float | int, y: float | int)  -> float | int:
     """
-    Returns the sum of two numbers (intgers or floats)
+    Returns the sum of two numbers (integers or floats)
 
     Args:
         x (float): the first number
@@ -33,7 +33,7 @@ def add(x: float, y: float) -> float:
 
 def subtract(x: float, y: float) -> float:
     """
-    Returns the difference of two numbers (intgers or floats)
+    Returns the difference of two numbers (integers or floats)
 
     Args:
         x (float): the first number
@@ -63,7 +63,7 @@ def subtract(x: float, y: float) -> float:
 
 def multiply(x: float, y: float) -> float:
     """
-    Returns the product of two numbers (intgers or floats)
+    Returns the product of two numbers (integers or floats)
 
     Args:
         x (float): the first number
@@ -93,7 +93,7 @@ def multiply(x: float, y: float) -> float:
 
 def divide(x: float, y: float) -> float:
     """
-    Returns the quotient of two numbers (intgers or floats)
+    Returns the quotient of two numbers (integers or floats)
 
     Args:
         x (float): the first number
