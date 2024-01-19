@@ -35,8 +35,9 @@ typedef struct list_s
 
 list_t *init(void);
 void append(list_t *list, int data);
+void push(list_t *list, int data);
 void pop(list_t *list);
 void print_list(list_t *list);
-void print_element_at(list_t *list, int element);
+void print_element_at(list_t *list, int index);
 
 #endif /* LIST_H */
