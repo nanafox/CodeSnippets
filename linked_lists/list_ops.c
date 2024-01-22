@@ -133,3 +133,29 @@ void append(list_t *list, int data)
 
 	list->size++;
 }
+
+/**
+ * pop - removes an element at the beginning of the linked list
+ * @list: the list to remove from
+ */
+void pop(list_t *list)
+{
+	node_t *temp;
+
+	if (list->size == 0)
+		return;
+
+	temp = list->head;
+	list->head = list->head->next;
+
+	free(temp);
+	temp = NULL;
+
+	list->size--;
+
+	if (list->size == 0)
+	{
+		list->head = NULL;
+		list->tail = NULL;
+	}
+}
